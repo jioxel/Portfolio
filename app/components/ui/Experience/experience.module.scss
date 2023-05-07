@@ -1,0 +1,94 @@
+
+@import '../../../styles/palette';
+.experienceElement{
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: stretch;
+     gap:2rem;
+     color: #ffffff; 
+}
+@media (min-width:768px){
+     .experienceElement{
+          flex-direction: row;
+
+     }  
+}
+
+.h3{
+     color: $color-gray-100;
+     font-size: 2rem;
+     padding: 1rem 0;
+     border: 4px solid $color-gray-600;
+     background-color: $color-gray-600;
+     border-radius: 1.8rem 1.8rem 0 0;
+     text-align: center;
+}
+.experienceLeft{
+     flex: 1;
+     background-color: #ffffff00;
+     border-radius: 2rem;
+     flex-wrap: 1;
+     color: #000;
+     border: 1px solid $color-gray-600;
+     display: flex;
+     flex-direction: column;
+}
+.experienceTextContent{
+     padding: 1rem 2rem;
+}
+.pCompany{
+     font-size: 2.5rem;
+     font-weight: 800;
+     line-height: 1;
+     padding-top:1rem ;
+}
+.pPosition{
+     font-weight: 800;
+}
+.pSeason{
+     font-weight: 800;
+}
+.pDescription{
+     font-weight: 400;
+}
+.experienceRight{
+     flex: 1;
+     color: #000;
+}
+
+
+.experienceResponsabilities{
+     background-color: #ffffff00;
+     border-radius: 2rem;
+     border: 1px solid $color-gray-600;
+     display: flex;
+     flex-direction: column;
+}
+.ul{
+     list-style: none;
+}
+
+.experienceTools{
+     background-color: #ffffff00;
+     margin-top: 2rem;
+     border-radius: 2rem;
+     border: 1px solid $color-gray-600;
+     display: flex;
+     flex-direction: column;
+}
+.h2{
+     color:$color-primary-900;
+     font-size: 3.5rem;
+     margin-bottom: 3rem;
+     text-align: center;
+}
+@media (min-width:768px){
+     .h2{
+          text-align: left;
+     }
+}
+
+
+
+
