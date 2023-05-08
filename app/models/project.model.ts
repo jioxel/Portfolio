@@ -6,3 +6,7 @@ export interface project{
      gitHub:String
      link?: String 
 }
+
+export interface projects{
+     projects: project[]
+}
