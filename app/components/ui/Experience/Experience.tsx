@@ -19,7 +19,7 @@ interface experience{
      tools:string[]
 }
 
-const historyEperience:experience[]=[
+const historyExperience:experience[]=[
      {    companyName: 'ENDTOEND MANAGEMENT',
           startDate:{
                day:1,
@@ -46,7 +46,7 @@ const Experience = () => {
 
   return (<>
           <h2 className={style.h2}>Experience</h2>
-          <ExperienceList historyEperience={historyEperience}/>
+          <ExperienceList historyEperience={historyExperience}/>
      </>
   )
 }
