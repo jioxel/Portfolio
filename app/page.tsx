@@ -5,6 +5,7 @@ import Header from './components/ui/Header/Header'
 import Link from 'next/link'
 import Button from './components/Button'
 import Experience from './components/ui/Experience/Experience';
+import { Projects } from './components/ui/Projects'
 
 
 export default function Home() {
@@ -49,6 +50,10 @@ export default function Home() {
       
       </section>
 
+
+        <Projects />
+
+      
 
 
 

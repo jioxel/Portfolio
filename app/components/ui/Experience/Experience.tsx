@@ -46,7 +46,7 @@ const Experience = () => {
 
   return (<>
           <h2 className={style.h2}>Experience</h2>
-          <ExperienceList historyEperience={historyExperience}/>
+          <ExperienceList historyExperience={historyExperience}/>
      </>
   )
 }

@@ -18,14 +18,14 @@ interface experience{
      tools:string[]
 }
 interface Props{
-     historyEperience: experience[]
+     historyExperience: experience[]
 }
-const ExperienceList = ({historyEperience}:Props) => {
+const ExperienceList = ({historyExperience}:Props) => {
 
   return (
      <div className="experienceList">
           {
-               historyEperience.map((job)=><div className={styles.experienceElement}>
+               historyExperience.map((job)=><div className={styles.experienceElement}>
                     <div className={styles.experienceLeft}>
                          <h3 className={styles.h3}>COMPANY</h3>
                          <div className={styles.experienceTextContent}>
