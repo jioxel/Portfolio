@@ -50,8 +50,13 @@ export default function Home() {
       
       </section>
 
+      <section className={styles.sectionProjects} id="experience">
 
         <Projects />
+
+      
+      </section>
+        
 
       
 

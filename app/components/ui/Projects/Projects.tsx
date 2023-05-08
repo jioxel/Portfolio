@@ -2,17 +2,17 @@ import { projects } from "@/app/data"
 import { project } from "@/app/models"
 import Image from 'next/image';
 import { Button } from "./components/Button";
-
+import styles from './projects.module.scss'
 const ProjectList =({projects}:{projects:project[]})=>{
-  return <div>
-    {projects.map(project=> <div>
-      <div>
+  return <>
+    {projects.map(project=> <div className={styles.cardProject}>
+      <div className={styles.imgContent}>
         <Image
           src={`/images/${project.image}`}
           alt={`${project.description}`}
-          // className={styles.avatar}
-          width={500}
-          height={500}
+          className={styles.img}
+          width={320}
+          height={180}
           quality={100}
           priority
         />
@@ -28,12 +28,15 @@ const ProjectList =({projects}:{projects:project[]})=>{
 
       </div>
     </div>)}
-  </div>
+    </>
+  
 }
 
 const Proyects = () => {
   return (
+    <div className={styles.projectsContent}>
     <ProjectList projects={projects}/>
+    </div>
   )
 }
 export default Proyects

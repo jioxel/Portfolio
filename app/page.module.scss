@@ -165,3 +165,25 @@
 
     }
   }
+
+
+  
+//**************Projects***************//
+.sectionProjects{
+  width: 100%;
+  margin: 10rem auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+  }
+  @media (min-width:768px){
+    .experienceContent{
+      padding: 5rem 2rem;
+
+    }
+  }
+  @media (min-width:800px){
+    .experienceContent{
+      padding: 5rem 0;
+
+    }
+  }
