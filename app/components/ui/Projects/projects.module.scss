@@ -1,24 +1,52 @@
-.projectsContent{
+@import '../../../styles/palette';
+.projectsContent {
      padding: 5rem 1rem;
      max-width: 110rem;
      margin: 0 auto;
-   }
-.projectsContent{
+}
+
+.projectsContent {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
      justify-items: center;
      gap: 1.5rem;
 }
-.cardProject{
+
+.cardProject {
      width: 100%;
      max-width: 32rem;
 }
-.imgContent{
+
+.imgContent {
      display: inline-block;
      display: flex;
      justify-content: center;
+     margin-bottom: 2rem;
+
 }
+
 .img {
      max-width: 100%;
      display: block;
+     border-radius: 2rem;
+
 }
+
+.infoContent {
+     display: flex;
+     flex-direction: column;
+     color: $color-gray-100;
+}
+
+.infoHead {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.infoLinks{
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+}
+
+.infoBody {}

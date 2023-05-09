@@ -17,13 +17,17 @@ const ProjectList =({projects}:{projects:project[]})=>{
           priority
         />
       </div>
-      <div>
-        <h3>{project.title}</h3>
-        <div>
-          <Button url={project.link ?? ""} type="gitHub"/>
-          <Button url={project.link ?? ""} type="link"/> 
+      <div className={styles.infoContent}>
+        <div className={styles.infoHead}>        
+          <h3 style={{fontWeight:'300'}}>{project.title}</h3>
+          <div className={styles.infoLinks}>
+            <Button url={project.link ?? ""} type="gitHub"/>
+            <Button url={project.link ?? ""} type="link"/> 
+          </div>
         </div>
-        <p>{project.description}</p>
+        <div className={styles.infoBody}>
+          <p>{project.description}</p>
+        </div>
         
 
       </div>
