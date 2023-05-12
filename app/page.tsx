@@ -11,7 +11,7 @@ import { Projects } from './components/ui/Projects'
 export default function Home() {
   return (
   <>
-    <Header/>
+    {/* <Header/> */}
     <main className={styles.main}>
       <section className={styles.sectionMe}>
         <div className={styles.contentMe}>
@@ -30,11 +30,11 @@ export default function Home() {
           </div>
           <div className={styles.avatarContent}>
           <Image
-                  src="/me2.png"
+                  src="/me2.jpg"
                   alt="Foto jovany"
                   className={styles.avatar}
-                  width={500}
-                  height={500}
+                  width={800}
+                  height={800}
                   quality={100}
                   priority
                 />

@@ -5,7 +5,7 @@ import { Button } from "./components/Button";
 import styles from './projects.module.scss'
 const ProjectList =({projects}:{projects:project[]})=>{
   return <>
-    {projects.map(project=> <div className={styles.cardProject}>
+    {projects.map((project,i)=> <div key={i} className={styles.cardProject} >
       <div className={styles.imgContent}>
         <Image
           src={`/images/${project.image}`}
